@@ -1,0 +1,37 @@
+"""
+DeQuan Williams
+Angile Uno Module 5
+Strings and Lists
+"""
+
+from sys import exit
+
+import requests
+
+site_data = {}
+
+with open ("sites.csv","r")as infile:
+           data = infile.read()
+           sites = data.split(",")
+for site in sites:
+           site_data[site] = requests.get(site)
+
+for key, value in site_data.items():
+           print(f"\n{key} : {values}")
+
+#Slicing
+#1
+
+text = http://pace.uno.edu
+print(text[16:])
+
+text = https://www.google.com
+print(text[19:])
+
+text = https://uno.edu
+print(text[12:])
+
+#2
+
+
+           
